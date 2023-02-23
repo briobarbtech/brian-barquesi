@@ -9,6 +9,7 @@ import AboutMeSection from "./components/AboutMeSection";
 import aboutMeImg from './assets/img/about-me.png'
 import ServicesSection from "./components/ServicesSection";
 import ToolsSection from "./components/ToolsSection";
+import ContactSection from './components/cards/ContactSection'
 
 
 function App() {

@@ -35,7 +35,8 @@ function ServiceCard({ data }) {
               style={{ height: isActive[data.key] ? "300px" : "100px" }}
             >
               <data.icon className="service-icon" />
-              <h1 className="service-title">{data.title}</h1>
+              <h1 className="service-title">{data.title} </h1>
+              <p className="triangle">▼</p>
               <span
                 className="span-description"
                 style={{ opacity: isActive[data.key] ? 1 : 0 ,display: isActive[data.key] ? 'block' : 'none' }}
@@ -74,6 +75,16 @@ const ServiceCardContainer = styled.div`
       display: none;
     }
   }
+  .triangle{
+    grid-column: 5;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    justify-content: center;
+    color: ${colors.colorWhite}
+    
+  }
   .services_card {
     width: 420px;
     height: 150px;
@@ -82,7 +93,8 @@ const ServiceCardContainer = styled.div`
     padding: 10px;
     transition: 0.3s;
     @media (max-width: 1002px) {
-      width: 320px;
+      margin: 0 auto;
+      width: 420px;
       height: 100px;
       display: grid;
       grid-template-columns: repeat(5, 1fr);

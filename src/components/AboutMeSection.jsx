@@ -108,7 +108,7 @@ img{
   grid-column: 4/10;
   grid-row: 3;
   align-items: left;
-  padding: 60px;
+  
   border: 1px solid ${colors.colorPrimary};
   border-radius: 15px;
   display: flex;

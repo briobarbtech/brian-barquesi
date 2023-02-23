@@ -60,12 +60,20 @@ const SkillCardContainer = styled.div`
     height: 163px;
     padding: 5px 10px;
     border-radius: 15px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    transition: .3s;
+    transition: 0.3s;
+    @media (max-width: 1002px) {
+      grid-template-columns: 1fr 2fr 2fr;
+      margin-bottom: 5px;
+      grid-gap: 10px;
+      grid-template-rows: 1fr;
+      max-width: 100%;
+      max-height: 60px;
+      background: ${colors.colorSecondary};
+    }
   }
   .skill-card:hover {
-    
     background: ${colors.colorSecondary};
   }
   .skill-card:hover .skill-card_title {
@@ -82,9 +90,20 @@ const SkillCardContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1002px) {
+      grid-row: 1;
+      grid-column: 1;
+      
+    }
+  }
+  .skill-card_icon {
+    @media (max-width: 1002px) {
+      width: 40px;
+      height: 40px;
+    }
   }
   .skill-card_title {
-    transition: .3s;
+    transition: 0.3s;
     grid-row: 2;
     font-family: ${fonts.kanit};
     font-weight: 500;
@@ -94,18 +113,28 @@ const SkillCardContainer = styled.div`
     align-items: center;
     justify-content: center;
     visibility: hidden;
+    @media (max-width: 1002px) {
+      grid-column: 2;
+      grid-row: 1;
+      visibility: visible;
+    }
   }
 
   ul {
-    transition: .3s;
+    transition: 0.3s;
     grid-row: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     visibility: hidden;
+    @media (max-width: 1002px) {
+      grid-column: 3;
+      grid-row: 1;
+      visibility: visible;
+    }
   }
   .skill-card_date {
-    transition: .3s;
+    transition: 0.3s;
     font-family: ${fonts.kanit};
     color: ${colors.colorWhite};
     grid-row: 4;
@@ -116,89 +145,7 @@ const SkillCardContainer = styled.div`
     font-align: center;
     visibility: hidden;
     @media (max-width: 1002px) {
-      visibility: hidden;
+      display: none;
     }
   }
 `;
-
-/* .skill-card_icon {
-  width: 50%;
-  @media(min-width: 1002px){
-    width: 90%;
-  }
-}
-.skill-card_icon_container{
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-}
-
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100px;
-    @media(max-width: 1002px){
-      
-      grid-column: 3;
-
-    }
-  }
-  .skill-card {
-    padding: 0 5px 0 5px;
-    width: 210px;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: space-around;
-    @media(max-width: 1002px){
-      display: grid;
-      grid-template-columns: 1fr 2fr 2fr;
-      width: 300px;
-      height: 80px;
-      padding: 0;
-      background: ${colors.colorSecondary};
-     
-    }
-  }
-  .skill-card:hover {
-    background: ${colors.colorSecondary};
-  }
-  .skill-card_info {
-    font-weight: 300;
-    visibility: hidden;
-    @media(max-width: 1002px){
-      visibility: visible;
-      display: grid;
-      grid-column: 2;
-    }
-  }
-  .skill-card:hover .skill-card_info{
-    visibility: visible;
-
-  }
-  .skill-card_date {
-    color: ${colors.colorWhite};
-    margin-top: 5px;
-    font-family: ${fonts.kanit};
-    font-size: 1.4rem;
-    font-align: center;
-    @media(max-width: 1002px){
-  
-      visibility: hidden;
-    }
-  }
-  .skill-card_title {
-    color: ${colors.colorWhite};
-    font-family: ${fonts.kanit};
-    font-weight: 500;
-    font-size: 1.4rem;
-    margin-bottom: 5px;
-    font-align: center;
-  } */
