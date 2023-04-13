@@ -6,31 +6,10 @@ import AboutMeInfo from "./cards/AboutMeInfo";
 import DownloadButton from "./buttons/DownloadButton";
 import fonts from "../utils/fonts";
 import { dimensions } from "../utils/dimensions";
+import CreateProfileCardInformation from "../utils/functions/CreateProfileCardInformation";
 
 function AboutMeSection({ img }) {
-  const info = {
-    nombre: "Brian Barquesi",
-    edad: "24 Años",
-    telefono: "+54 9 2622 316791",
-    freelance: "Disponible",
-    direccion: "Tunuyán, Mendoza - Argentina",
-    estudios: "6 año/s",
-  };
-  function createItems() {
-    var items = [];
-    var counter = 0;
-    for (var key in info) {
-      var value = info[key];
-      items.push(
-        <div className="item" key={counter}>
-          <p className="tag">{key}:</p> <p className="info">{value}</p>
-        </div>
-      );
-      counter++;
-    }
-    return items;
-  }
-
+  
   return (
     <>
       <AboutMeSectionContainer>
@@ -39,7 +18,7 @@ function AboutMeSection({ img }) {
             <TagSection data={{ title: "sobre mi", subtitle: "descubre" }} />
           </div>
           <div className="about-me_img">
-            <img src={img} alt="" />
+            <img src={img} alt="Foto en primer plano de Brian Barquesi" />
             <div className="about-me_section_resp">
               <AboutMeInfo />
             </div>
@@ -47,7 +26,7 @@ function AboutMeSection({ img }) {
           <div className="about-me_section">
             <AboutMeInfo />
           </div>
-          <div className="about-me_data">{createItems()}</div>
+          <div className="about-me_data"><CreateProfileCardInformation/></div>
           <div className="about-me_cv">
             <DownloadButton content={"Descargar CV"} />
           </div>

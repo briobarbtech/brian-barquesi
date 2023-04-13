@@ -36,10 +36,13 @@ function ServiceCard({ data }) {
             >
               <data.icon className="service-icon" />
               <h1 className="service-title">{data.title} </h1>
-              <p className="triangle">▼</p>
+              
               <span
                 className="span-description"
-                style={{ opacity: isActive[data.key] ? 1 : 0 ,display: isActive[data.key] ? 'block' : 'none' }}
+                style={{
+                  opacity: isActive[data.key] ? 1 : 0,
+                  display: isActive[data.key] ? "block" : "none",
+                }}
               >
                 {data.description}
               </span>
@@ -61,29 +64,28 @@ const ServiceCardContainer = styled.div`
       display: block;
     }
   }
-  .services_section-0{
+  .services_section-0 {
     height: 400px;
     transition: 0.3s;
     @media (max-width: 1002px) {
       display: none;
     }
   }
-  .services_section-1{
+  .services_section-1 {
     height: 150px;
     transition: 0.3s;
     @media (min-width: 1002px) {
       display: none;
     }
   }
-  .triangle{
+  .triangle {
     grid-column: 5;
     grid-row: 1;
     display: flex;
     align-items: center;
     padding-top: 5px;
     justify-content: center;
-    color: ${colors.colorWhite}
-    
+    color: ${colors.colorWhite};
   }
   .services_card {
     width: 420px;
@@ -94,7 +96,7 @@ const ServiceCardContainer = styled.div`
     transition: 0.3s;
     @media (max-width: 1002px) {
       margin: 0 auto;
-      width: 420px;
+      width: 300px;
       height: 100px;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -130,9 +132,10 @@ const ServiceCardContainer = styled.div`
     @media (max-width: 1002px) {
       width: 100%;
       margin: auto;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       grid-column: 2/6;
       grid-row: 1;
+      
     }
   }
   .service-title:first-letter {

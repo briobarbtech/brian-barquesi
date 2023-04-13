@@ -1,19 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import colors from "../../utils/colors";
+import { lorem } from "../../utils/data";
 import fonts from "../../utils/fonts";
 
 function AboutMeInfo() {
- 
-  const description =
-    "Lorem ipsum dolor sit amet consectetur, adipiscing elit venenatis ullamcorper porttitor cubilia, duis aliquam nunc urna. Facilisis eros quisque varius justo mollis fringilla turpis sodales, consequat platea fermentum suspendisse sollicitudin dignissim donec dictumst, odio sapien placerat vehicula rutrum habitasse volutpat. Semper pulvinar in rutrum per penatibus non lectus condimentum blandit, scelerisque sollicitudin faucibus aliquam placerat nec proin vitae maecenas vel, nisi luctus fermentum facilisi vivamus praesent vulputate a.";
-
-
 
   return (
     <>
       <AboutMeInfoContainer>
-          <p className="about-me_description">{description}</p>
+          <p className="about-me_description">{lorem}</p>
       </AboutMeInfoContainer>
     </>
   );

@@ -10,6 +10,7 @@ import aboutMeImg from './assets/img/about-me.png'
 import ServicesSection from "./components/ServicesSection";
 import ToolsSection from "./components/ToolsSection";
 import ContactSection from './components/cards/ContactSection'
+import FormationSection from "./components/FormationSection";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <AboutMeSection img={aboutMeImg}/>
       <ServicesSection/>
       <ToolsSection />
+      <FormationSection />
       {/*<ContactSection/> */}
     </div>
   );

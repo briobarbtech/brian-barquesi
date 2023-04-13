@@ -4,7 +4,7 @@ import styled from "styled-components";
 import fonts from "../../utils/fonts";
 import colors from "../../utils/colors";
 
-function SkillsCard({ title, value, date, Icon }) {
+function SkillsCard({ title, value, date, img }) {
   function coloringStars(value) {
     let starsColors = [];
     for (let i = 0; i <= 5; i++) {
@@ -24,7 +24,7 @@ function SkillsCard({ title, value, date, Icon }) {
       <SkillCardContainer>
         <div className="skill-card">
           <div className="skill-card_icon_container">
-            <Icon className="skill-card_icon" />
+            <img src={img} className="skill-card_icon" alt={`Icono de ${title}`}/>
           </div>
           <p className="skill-card_title">{title}</p>
           <ul>
@@ -107,7 +107,7 @@ const SkillCardContainer = styled.div`
     grid-row: 2;
     font-family: ${fonts.kanit};
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: ${colors.colorWhite};
     display: flex;
     align-items: center;

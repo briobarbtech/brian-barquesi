@@ -13,7 +13,7 @@ function ProfileIndexCard({ profile, nombre, subtitle }) {
           className="profile_card"
         >
           <div className="top" >
-            <img className="profile_photo" src={profile} />
+            <img className="profile_photo" src={profile} alt={"Imagen de perfil de Brian Barquesi"}/>
             <p className="profile_name">{nombre}</p>
             <p className="profile_subtitle">{subtitle}</p>
           </div>

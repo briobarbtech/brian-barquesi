@@ -19,7 +19,7 @@ const DownloadButtonContainer = styled.div`
     
     width: 200px;
     height: 50px;
-    background: ${colors.colorPrimary};
+    background: #BD4640;
     color: ${colors.colorWhite};
     border-radius: 10px;
     font-family: ${fonts.kanit};

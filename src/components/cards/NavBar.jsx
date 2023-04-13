@@ -15,7 +15,7 @@ function NavBar() {
     <>
       <NavBarContainer>
         <div className="navbar">
-          <img src={logotipo} className="navbar_logo" />
+          <img src={logotipo} className="navbar_logo" alt={"Logo que icluye el texto: Brian developer"}/>
 
           <ul className={`navbar_link ${context.burgerState.isActive ? "active" : ""}`}>
             <li>

@@ -1,28 +1,29 @@
-import { ReactComponent as JavascriptIcon } from '../assets/icons/icons_javascript.svg'
-import { ReactComponent as FlutterIcon } from '../assets/icons/icons_flutter.svg'
-import { ReactComponent as PythonIcon } from '../assets/icons/icons_python.svg'
-import { ReactComponent as JavaIcon } from '../assets/icons/icons_java.svg'
-import { ReactComponent as FigmaIcon } from '../assets/icons/icons_figma.svg'
-import { ReactComponent as HtmlIcon } from '../assets/icons/icons_html.svg'
-import { ReactComponent as CssIcon } from '../assets/icons/icons_css.svg'
-import { ReactComponent as GitIcon } from '../assets/icons/icons_git.svg'
-import { ReactComponent as GithubIcon } from '../assets/icons/icons_github.svg'
-import { ReactComponent as TrelloIcon } from '../assets/icons/icons_trello.svg'
-import { ReactComponent as ReactIcon } from '../assets/icons/icons_react.svg'
+
+import javascriptIcon from '../assets/icons/icons_javascript.png'
+import flutterIcon from '../assets/icons/icons_flutter.png'
+import pythonIcon from '../assets/icons/icons_python.png'
+import javaIcon from '../assets/icons/icons_java.png'
+import figmaIcon from '../assets/icons/icons_figma.png'
+import htmlIcon from '../assets/icons/icons_html.png'
+import cssIcon from '../assets/icons/icons_css.png'
+import gitIcon from '../assets/icons/icons_git.png'
+import githubIcon from '../assets/icons/icons_github.png'
+import trelloIcon from '../assets/icons/icons_trello.png'
+import reactIcon from '../assets/icons/icons_react.png'
 
 
 const icons = {
-    javascript: JavascriptIcon,
-    flutter: FlutterIcon,
-    python: PythonIcon,
-    java: JavaIcon,
-    figma: FigmaIcon,
-    html: HtmlIcon,
-    css: CssIcon,
-    git: GitIcon,
-    github: GithubIcon,
-    trello: TrelloIcon,
-    react: ReactIcon
+    javascript: 'src/assets/icons/icons_javascript.png',
+    flutter:  'src/assets/icons/icons_flutter.png',
+    python: 'src/assets/icons/icons_python.png',
+    java: 'src/assets/icons/icons_java.png',
+    figma: 'src/assets/icons/icons_figma.png',
+    html: 'src/assets/icons/icons_html.png',
+    css: 'src/assets/icons/icons_css.png',
+    git: 'src/assets/icons/icons_git.png',
+    github: 'src/assets/icons/icons_github.png',
+    trello: 'src/assets/icons/icons_trello.png',
+    react: 'src/assets/icons/icons_react.png'
 };
 
 export default icons;
