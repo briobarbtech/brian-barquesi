@@ -50,6 +50,7 @@ const FormationSectionContainer = styled.div`
     overflow: auto;
     scroll-behavior: auto;
     @media (max-width: 1002px) {
+      width:95%;
       height: 720px;
       justify-content: space-around;
     }

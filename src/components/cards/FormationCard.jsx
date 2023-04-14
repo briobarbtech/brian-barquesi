@@ -41,6 +41,8 @@ const FormationCardContainer = styled.div`
     width: 400px;
     height: 360px;
     @media (max-width: 1002px) {
+      width: 100%;
+      min-width: 360px;
       margin: 5px;
     }
   }
@@ -49,6 +51,7 @@ const FormationCardContainer = styled.div`
     display: flex;
     align-items: center;
     height: 260px;
+    
   }
   .formation-card-image {
     max-width: 260px;

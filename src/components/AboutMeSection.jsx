@@ -40,7 +40,7 @@ export default AboutMeSection;
 const AboutMeSectionContainer = styled.div`
 .container{
   display grid;
-  width: 100%;
+
   height: 1000px;
   background: ${colors.colorBackgroundSecondary};
   grid-template-columns: repeat(10, 1fr);
@@ -96,7 +96,7 @@ img{
   @media (max-width: 1002px) {
     grid-column: 1/11;
     grid-row: 3;
-    
+    width:95%;
       }
 }
 .about-me_cv{
@@ -104,6 +104,7 @@ img{
   grid-row: 4;
   @media (max-width: 1002px) {
     padding-top: 20px;
+    margin-left: 7px;
     grid-column: 1/4;
     grid-row: 4;
   }
