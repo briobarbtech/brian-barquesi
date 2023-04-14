@@ -374,13 +374,18 @@ a{
     flex-direction: column;
     justify-content: space-between;
   }
-`;function C0(e){return v(Xe,{children:v(_0,{children:v("a",{href:"src/assets/cv.pdf",className:"button_download",children:e.content})})})}const _0=Ce.div`
+`;function C0(e){return v(Xe,{children:v(_0,{children:v("div",{className:"button_download",children:v("a",{href:"src/assets/cv.pdf",children:e.content})})})})}const _0=Ce.div`
+a{
+  text-decoration: none;
+  color: ${R.colorWhite};
+}
   .button_download{
-    
     width: 200px;
     height: 50px;
     background: #BD4640;
-    color: ${R.colorWhite};
+    display:flex;
+    align-items: center;
+    justify-content: center;  
     border-radius: 10px;
     font-family: ${Se.kanit};
     font-size: 1.2rem;
