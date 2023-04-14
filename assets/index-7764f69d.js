@@ -202,7 +202,7 @@ button {
 a{
   text-decoration: none;
 }
-`;function m0({profile:e,nombre:t,subtitle:n}){return v(Xe,{children:v(h0,{children:ee("div",{className:"profile_card",children:[ee("div",{className:"top",children:[v("img",{className:"profile_photo",src:e,alt:"Imagen de perfil de Brian Barquesi"}),v("p",{className:"profile_name",children:t}),v("p",{className:"profile_subtitle",children:n})]}),v("div",{className:"bottom",children:ee("div",{className:"profile_social_sector",children:[v(yo,{Icon:s0,title:"LinkedIn",link:"https://www.linkedin.com/in/brian-barquesi"}),v(yo,{Icon:a0,title:"GitHub",link:"https://github.com/briobarbtech"}),v(yo,{Icon:u0,title:"Instagram",link:"https://www.instagram.com/barquesi.techie/"})]})})]})})})}const h0=Ce.div`
+`;function m0({profile:e,nombre:t,subtitle:n}){return v(Xe,{children:v(h0,{children:ee("div",{className:"profile_card",children:[ee("div",{className:"top",children:[v("img",{className:"profile_photo",src:e,alt:"Imagen de perfil de Brian Barquesi"}),v("p",{className:"profile_name",children:t}),v("p",{className:"profile_subtitle",children:n})]}),v("div",{className:"bottom",children:ee("div",{className:"profile_social_sector",children:[v(yo,{Icon:s0,title:"LinkedIn",link:"https://www.linkedin.com/in/barquesi-tech"}),v(yo,{Icon:a0,title:"GitHub",link:"https://github.com/briobarbtech"}),v(yo,{Icon:u0,title:"Instagram",link:"https://www.instagram.com/barquesi.techie/"})]})})]})})})}const h0=Ce.div`
   .top {
     transform: translate(0px, -40px);
     position: relative;
