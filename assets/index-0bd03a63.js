@@ -374,7 +374,7 @@ a{
     flex-direction: column;
     justify-content: space-between;
   }
-`;function C0(e){return v(Xe,{children:v(_0,{children:v("a",{href:"../../assets/cv.pdf",className:"button_download",children:e.content})})})}const _0=Ce.div`
+`;function C0(e){return v(Xe,{children:v(_0,{children:v("a",{href:"src/assets/cv.pdf",className:"button_download",children:e.content})})})}const _0=Ce.div`
   .button_download{
     
     width: 200px;
