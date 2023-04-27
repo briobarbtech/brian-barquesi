@@ -860,7 +860,7 @@ img{
     border-width: 0;
     margin-bottom: 15px;
     @media (max-width: 1002px) {
-      width: 340px;
+      width: 320px;
     }
   }
   label {
@@ -882,7 +882,7 @@ img{
     resize: none;
     @media (max-width: 1002px) {
       margin-bottom: 20px;
-      width: 340px;
+      width: 320px;
     }
   }
 `,X0="/brian-barquesi/assets/keyboard-493a75a1.jpg";function Z0(e){return p(J0,{children:p("button",{className:"send-form_button",children:e.content})})}const J0=se.div`
@@ -957,7 +957,7 @@ img{
     @media (max-width: 1002px) {
       padding: 0;
       padding-top: 3%;
-      width: 380px;
+      width: 360px;
       align-items: center;
     }
   }
