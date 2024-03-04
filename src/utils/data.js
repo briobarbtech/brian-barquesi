@@ -18,7 +18,7 @@ export const skills = [
 
 export const profileInformation = {
     nombre: "Brian Barquesi",
-    edad: "24 Años",
+    edad: "25 Años",
     telefono: "+54 9 2622 316791",
     freelance: "Disponible",
     direccion: "Tunuyán, Mendoza - Argentina",
